@@ -1,0 +1,99 @@
+html, body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #eeefe9;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Abel', sans-serif;
+}
+
+b, strong{
+    font-weight: 400;
+}
+
+@media(min-width: 768px){
+    .carousel-inner > item{
+        height: 700px;
+
+    }
+}
+
+.carousel-caption{
+    z-index: 10;
+}
+
+.carousel-inner > .item > img{ /* Alocar uma imagem em cima da outra */
+    position: absolute;
+    top: 2px;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.carousel-inner > .item{
+    height: 200px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1200px; /* Ajuste o tamanho máximo */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 210px; /* Ajuste a altura do carrossel */
+}
+
+.carousel-inner img {
+    height: 210px !important; /* Ou o valor que você quiser */
+    width: 100% !important;
+    object-fit: cover !important; /* Garante que a imagem se ajuste ao contêiner */
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand img {
+    height: 65px; /* Ajuste o tamanho da imagem */
+    width: auto; /* Mantém as proporções da imagem */
+    position: absolute; /* Retira a imagem do fluxo normal */
+    top: 0; /* Alinha ao topo da navbar */
+    left: 20px; /* Move para a esquerda */
+  }
+  
+  .navbar-nav {
+    margin-left: 85px; /* Adiciona espaço suficiente para evitar sobreposição */
+  }
+
+.sidebar{
+    background-color: #e9e6df;
+}
+
+.sidebar{
+    background-color: #e9e6df;
+}
+

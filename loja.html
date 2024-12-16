@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoGeo Games</title>
+
+  <!-- Bootstrap -->
+  <!-- Codigo para ir buscar o css para Bootstrap online -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+      crossorigin="anonymous"> -->
+    
+  <!-- Codigo para ir buscar o css para Bootstrap localmente -->
+  <link rel="stylesheet" href="../GitHub/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/neogeo.css">
+
+  <style>
+    html, body {
+      height: 1500px;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens_cabecario/neogeo_active.png" class="d-block w-100" alt="NeoGeo Active">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens_cabecario/neogeo_1.png" class="d-block w-100" alt="NeoGeo 1">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens_cabecario/neogeo_2.png" class="d-block w-100" alt="NeoGeo 2">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens_cabecario/neogeo_3.png" class="d-block w-100" alt="NeoGeo 3">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens_cabecario/neogeo_4.png" class="d-block w-100" alt="NeoGeo 4">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens_cabecario/neogeo_5.png" class="d-block w-100" alt="NeoGeo 5">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens_cabecario/neogeo_6.png" class="d-block w-100" alt="NeoGeo 6">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="imagens/Neo_Geo_logo.png" alt="NeoGeo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          
+          <!-- DropDown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Loja
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item">Categorias</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Acção</a></li>
+              <li><a class="dropdown-item" href="#">Lutas</a></li>
+              <li><a class="dropdown-item" href="#">Corridas</a></li>
+              <li><a class="dropdown-item" href="#">Aviões</a></li>
+              <li><a class="dropdown-item" href="#">Naves</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Capas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End NavBar -->
+
+  
+<!-- Seção de Jogos -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-9 main-content">
+            <div class="row">
+                <!-- Cartão de Jogo 1 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/knFWtmDkDiM?si=vm5FDvRiuRmWSrYq"
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The King of Fighters '98</h5>
+                        <p class="card-text">O torneio dos sonhos.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€24,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 2 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/ROugVCa_hUg?si=HoHwrRhCwxt-cUtU" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Alpha Mission II</h5>
+                        <p class="card-text">O torneio dos sonhos.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€24,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 3 -->
+                <div class="col-md-3 mb-4">
+                 <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/XeN72XGrbZg?si=9MCt0te-dhNhWta1" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Samurai Shodown</h5>
+                        <p class="card-text">Ação e honra em batalhas de espadas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€19,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 4 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/oqcYWJfLdSs?si=VoOV9ljLMhH15kyj" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Fatal Fury</h5>
+                        <p class="card-text">O início da rivalidade de lendas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€14,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 5 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/It8l3CNXUyg?si=O5KhWJww6bhNKn1N" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Neo Bomberman</h5>
+                        <p class="card-text">O início da rivalidade de lendas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€14,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 6 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/asPaCy4eJM0?si=gNbN5lJaE0jtw8-d" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Spinmaster</h5>
+                        <p class="card-text">O início da rivalidade de lendas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€14,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 7 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/3fwSWIdm0CY?si=Pq0VM9_o8VRn8-uq" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">SNK vs Capcom</h5>
+                        <p class="card-text">O início da rivalidade de lendas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€14,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 8 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/RxXc8YTx1Wc?si=4hsdF9j4VORZ9fHk" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Waku Waku 7</h5>
+                        <p class="card-text">O início da rivalidade de lendas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€14,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 9 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/iBwKndOD_1g?si=qdi1JrCZ_bTemGJL" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Overtop</h5>
+                        <p class="card-text">O início da rivalidade de lendas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€14,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 10 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/7RRsBRv8Xpw?si=75lDSU-Inz7EXJlo" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Thrash Rally</h5>
+                        <p class="card-text">O início da rivalidade de lendas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€14,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 11 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/d1W4Wi38eIg?si=Lm-SE6ntXr8u3_8c" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Aero Fighters 3</h5>
+                        <p class="card-text">O início da rivalidade de lendas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€14,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 12 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/VYyFhNhEcFg?si=gr2KytDa4E0uAioh" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pulsar</h5>
+                        <p class="card-text">O início da rivalidade de lendas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€14,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Cartão de Jogo 13 -->
+                <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Vídeo do YouTube -->
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/2kguJdOMjuI?si=R5coEKGV_bRkqcXm" 
+                            class="card-img-top youtube-video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Blazing Star</h5>
+                        <p class="card-text">O início da rivalidade de lendas.</p>
+                    </div>
+                    <!-- Usando flexbox para alinhar as estrelas -->
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i> <!-- Estrela cheia -->
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-fill text-warning" style="font-size: 20px;"></i>
+                        <i class="bi bi-star-half text-warning" style="font-size: 20px;"></i> <!-- meia estrela -->
+                        <i class="bi bi-star text-warning" style="font-size: 20px;"></i> <!-- Estrela vazia -->
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">€14,99</span>
+                        <button class="btn btn-success btn-sm">
+                            <i class="bi bi-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-3 sidebar">
+            <h2>Sidebar</h2>
+            <p>Este é o conteúdo da sidebar. Aqui você pode adicionar:</p>
+            <ul>
+                <li>Links de navegação</li>
+                <li>Filtros de pesquisa</li>
+                <li>Ofertas e promoções</li>
+                <li>Botões de chamada para ação</li>
+            </ul>
+
+            <!-- Exemplo de lista de categorias -->
+            <h3>Categorias</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#">Aventura</a></li>
+                <li class="list-group-item"><a href="#">Luta</a></li>
+                <li class="list-group-item"><a href="#">RPG</a></li>
+                <li class="list-group-item"><a href="#">Ação</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Rodapé -->
+<footer class="bg-dark text-white text-center py-4">
+  <p>&copy; 2024 NeoGeo Store. Todos os direitos reservados.</p>
+</footer>
+
+  <!-- Codigo para ir buscar o js para Bootstrap online -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script> -->
+
+  <!-- Codigo para ir buscar o js para Bootstrap localmente -->
+  <script src="../GitHub/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../GitHub/js/neogeo.js"></script>
+
+</body>
+</html>

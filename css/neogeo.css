@@ -10,6 +10,33 @@ h1, h2, h3, h4{
     font-family: 'Abel', sans-serif;
 }
 
+.intro-block{
+    background: url(../imagens/PURPALT.PNG) repeat;
+    padding: 100px 15px 60px;
+    color: #fff;
+}
+
+.info{
+    background: #eeefe9 repeat-x bottom;
+    padding: 1px 1px 1px 1px;
+}
+
+.info small{
+    color: #eeefe9;
+}
+
+.info a{
+    color: #fff;
+}
+
+.info a:hover{
+    color: #333;
+}
+
+.tab-pane{
+    padding: 40px 10px 0 10px;
+}
+
 b, strong{
     font-weight: 400;
 }
@@ -83,17 +110,50 @@ b, strong{
     position: absolute; /* Retira a imagem do fluxo normal */
     top: 0; /* Alinha ao topo da navbar */
     left: 20px; /* Move para a esquerda */
-  }
+}
   
-  .navbar-nav {
+.navbar-nav {
     margin-left: 85px; /* Adiciona espaço suficiente para evitar sobreposição */
-  }
-
-.sidebar{
-    background-color: #e9e6df;
 }
 
-.sidebar{
-    background-color: #e9e6df;
+/* Estilo personalizado para a sidebar */
+.sidebar {
+    background-color: #f8f9fa; /* Cor de fundo cinza clara */
+    border-left: 2px solid #e0e0e0; /* Linha separadora */
+    padding: 20px;
+    /*height: 100vh; /* Faz a sidebar ocupar a altura total */
 }
 
+.sidebar {
+    /*position: fixed;*/
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+
+/* Estilo para o vídeo */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    overflow: hidden;
+    border-radius: 10px; /* Arredondar bordas como se fosse uma imagem */
+}
+
+.youtube-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.padded{
+    padding: 100px 15px;
+}
